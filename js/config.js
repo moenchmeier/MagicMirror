@@ -41,13 +41,13 @@ var config = {
         ]
     },
     calendar: {
-        maximumEntries: 10, // Total Maximum Entries
+        maximumEntries: 15, // Total Maximum Entries
 		displaySymbol: true,
 		defaultSymbol: 'calendar', // Fontawsome Symbol see http://fontawesome.io/cheatsheet/
         urls: [
 		{
 			symbol: 'calendar-plus-o', 
-			url: 'http://mail.moenchmeier.de/ical/moenchmeier.de/mathias/Familie'
+			url: 'http://mail.moenchmeier.de/ical/moenchmeier.de/mathias/Familie.ics'
 		},
 		{
 			symbol: 'soccer-ball-o',
