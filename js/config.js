@@ -20,19 +20,24 @@ var config = {
         interval: 90000,
         fadeInterval: 4000,
         morning: [
-            'Good morning, handsome!',
-            'Enjoy your day!',
-            'How was your sleep?'
+            'Guten Morgen!',
+            'Schönen Tag!',
+            'Schön geschlafen?'
         ],
         afternoon: [
-            'Hello, beauty!',
-            'You look sexy!',
-            'Looking good today!'
+            'Hallo Schönheit',
+            'Schöner Tag, oder?',
+            'Nutze den Tag!'
+        ],
+        zaehneputzen: [
+            'Schön putzen!',
+            'Ab ins Bettchen...',
+            'Auch hinter den Ohren sauber machen!'
         ],
         evening: [
-            'Wow, you look hot!',
-            'You look nice!',
-            'Hi, sexy!'
+            'Hoffentlich war der Tag schön!',
+            'Gute Nacht!',
+            'Schöne Träume!'
         ]
     },
     calendar: {
@@ -42,11 +47,11 @@ var config = {
         urls: [
 		{
 			symbol: 'calendar-plus-o', 
-			url: 'wO-6QfHSY5mXtHcRGVxYZUf7U3HPDOTG5x0qYnno1Zr_VuKH2M'
+			url: 'http://mail.moenchmeier.de/ical/moenchmeier.de/mathias/Familie'
 		},
 		{
 			symbol: 'soccer-ball-o',
-			url: 'https://www.google.com/calendar/ical/akvbisn5iha43idv0ktdalnor4%40group.calendar.google.com/public/basic.ics',
+			url: 'https://www.google.com/calendar/ical/spielplan.1.bundesliga%40gmail.com/public/basic.ics',
 		},
 		// {
 			// symbol: 'mars',
@@ -63,6 +68,6 @@ var config = {
 		]
     },
     news: {
-        feed: 'http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml'
+        feed: 'http://www.tagesschau.de/xml/rss2'
     }
 }
