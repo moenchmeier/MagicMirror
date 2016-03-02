@@ -4,13 +4,13 @@ var compliments = {
 	complimentList: {
 		'morning': config.compliments.morning,
 		'afternoon': config.compliments.afternoon,
+		'zaehneputzen': config.compliments.zaehneputzen,
 		'evening': config.compliments.evening
 	},
-	updateInterval: config.compliments.interval || 30000,
+	updateInterval: config.compliments.interval || 60000,
 	fadeInterval: config.compliments.fadeInterval || 4000,
 	intervalId: null
 };
-
 /**
  * Changes the compliment visible on the screen
  */
@@ -32,9 +32,12 @@ compliments.updateCompliment = function () {
 	} else if (hour >= 12 && hour < 17) {
 		// Afternoon compliments
 		_list = compliments.complimentList['afternoon'].slice();
-	} else if (hour >= 17 || hour < 3) {
+	} else if (hour >= 17 || hour < 21) {
 		// Evening compliments
 		_list = compliments.complimentList['evening'].slice();
+	} else if (hour >= 21 || hour < 3) {
+		// Zaehneputzen compliments
+		_list = compliments.complimentList['zaehneputzen'].slice();
 	} else {
 		// Edge case in case something weird happens
 		// This will select a compliment from all times of day
