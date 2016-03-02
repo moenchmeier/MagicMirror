@@ -41,7 +41,7 @@ var weather = {
  * @return {float}             The new floating point value
  */
 weather.roundValue = function (temperature) {
-	return parseFloat(temperature).toFixed(1);
+	return parseFloat(temperature).toFixed(0);
 }
 
 /**
